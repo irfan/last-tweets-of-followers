@@ -9,24 +9,24 @@ Directory Structure
 ------------------
 module/Tweets folder looks like this:
 
-├── Module.php
-├── config
-│   └── module.config.php
-├── src
-│   └── Tweets
-│       ├── Controller
-│       │   └── TweetController.php
-│       ├── Service
-│       │   ├── TwitterFactory.php
-│       │   └── TwitterService.php
-│       └── View
-│           └── Helper
-│               └── ConfigHelper.php
-└── view
-    └── tweets
-        └── tweet
-            ├── list.phtml
-            └── pagination.phtml
+    ├── Module.php
+    ├── config
+    │   └── module.config.php
+    ├── src
+    │   └── Tweets
+    │       ├── Controller
+    │       │   └── TweetController.php
+    │       ├── Service
+    │       │   ├── TwitterFactory.php
+    │       │   └── TwitterService.php
+    │       └── View
+    │           └── Helper
+    │               └── ConfigHelper.php
+    └── view
+        └── tweets
+            └── tweet
+                ├── list.phtml
+                └── pagination.phtml
 
 Installation
 ------------
