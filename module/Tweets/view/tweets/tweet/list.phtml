@@ -1,0 +1,13 @@
+<?php echo $this->partial('tweets/tweet/pagination', ['cursor' => $this->cursor]); ?>
+
+<div class="list-group">
+    <?php foreach ($this->tweets as $tweet) : ?>
+    <a href="http://twitter.com/<?php echo $tweet['name']; ?>" class="list-group-item" target="_blank">
+        <h4 class="list-group-item-heading"><?php echo $tweet['name']; ?></h4>
+        <p class="list-group-item-text"><?php echo $tweet['text']; ?></p>
+    </a>
+    <?php endforeach; ?>
+</div>
+
+<?php echo $this->partial('tweets/tweet/pagination', ['cursor' => $this->cursor]); ?>
+

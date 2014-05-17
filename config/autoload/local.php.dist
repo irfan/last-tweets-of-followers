@@ -1,0 +1,32 @@
+<?php
+/**
+ * Configuration steps:
+ *
+ * Change the user name in twitter array.
+ * Go to https://apps.twitter.com page and create an application.
+ * Copy consumer key and consumer secret and put under oauth_options in this config.
+ * Generate access token.
+ * Put the access token and secret under access_token.
+ */
+
+return [
+    'twitter' => [
+        'username' => 'irfandurmus',
+        
+        'access_token' => [
+            'token'  => 'generated access token here',
+            'secret' => 'generated access token key here',
+        ],
+        'oauth_options' => [
+            'consumerKey' => 'consumer key here',
+            'consumerSecret' => 'consumer secret here',
+        ],
+        'http_client_options' => [
+            'adapter' => 'Zend\Http\Client\Adapter\Curl',
+            'curloptions' => [
+                CURLOPT_SSL_VERIFYHOST => false,
+                CURLOPT_SSL_VERIFYPEER => false,
+            ],
+        ],
+    ],
+];
